@@ -1,4 +1,4 @@
-name: Deploy Node App on Azure VM
+name: Deploy Node App on Azure VM v.2
 
 on:
   workflow_dispatch:
@@ -66,8 +66,6 @@ jobs:
           args: >
             -Dsonar.projectKey=saud12858_sample-node-app-ci-lab-ih
             -Dsonar.organization=saud12858
-            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
-            -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
             -Dsonar.sources=.
             -Dsonar.exclusions=node_modules/**,coverage/**,tests/**,**/*.test.js,**/*.spec.js
             -Dsonar.tests=tests/
