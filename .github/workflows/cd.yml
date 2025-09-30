@@ -67,10 +67,6 @@ jobs:
             -Dsonar.projectKey=saud12858_sample-node-app-ci-lab-ih
             -Dsonar.organization=saud12858
             -Dsonar.sources=.
-            -Dsonar.exclusions=node_modules/**,coverage/**,tests/**,**/*.test.js,**/*.spec.js
-            -Dsonar.tests=tests/
-            -Dsonar.test.inclusions=**/*.test.js,**/*.spec.js
-            -Dsonar.coverage.exclusions=node_modules/**,coverage/**,tests/**,**/*.test.js,**/*.spec.js
 
       - name: Create deployment package
         run: |
