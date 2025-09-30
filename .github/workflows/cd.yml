@@ -64,8 +64,8 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=sample-node-app-saurabh
-            -Dsonar.organization=sda
+            -Dsonar.projectKey=saud12858_sample-node-app-ci-lab-ih
+            -Dsonar.organization=saud12858
             -Dsonar.token=${{ secrets.SONAR_TOKEN }}
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }}
             -Dsonar.sources=.
